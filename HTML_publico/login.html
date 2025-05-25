@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="shortcut icon" href="../Fotos/Logo.png">
+
+</head>
+<body>
+    <div class="contenedor">
+        <h2>Login</h2>
+        <form id="forma" name="forma">
+            <div class="elemento">
+                <label for="DNI">DNI</label>
+                <input type="text" id="DNI" name="DNI" autocomplete="false" required>
+            </div>
+            
+            <div class="elemento">
+                <label for="contrasena">Contraseña</label>
+                <input type="password" name="contrasena" id="contrasena" autocomplete="false" required>
+            </div>
+            
+            <div class="elemento">
+                <input type="button" value="Iniciar sesión" onclick="iniciarSesion()">
+            </div>
+        </form>
+    </div>
+    <script type="module" src="../js/iniciar_sesion.js"></script>
+</body>
+</html>

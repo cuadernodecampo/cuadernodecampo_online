@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Actualizar JSON</title>
+    <link rel="stylesheet" href="../CSS/global.css" />
+    <link rel="stylesheet" href="../CSS/actualizarJSON.css" />
+    <link rel="shortcut icon" href="../Fotos/Logo.png" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="containerlogo">
+          <a href="index.html">
+            <div class="img-logo"></div>
+          </a>
+          <p class="logo">Actualizar JSON de productos</p>
+        </div>
+        <nav>
+          <button
+            id="VolverInicio"
+            onclick="location.href='inicio_administrador.html'"
+          >
+            Menu administrador
+          </button>
+          <button id="BotonCerrarSesion" class="propiedades">
+            Cerrar sesión
+          </button>
+        </nav>
+      </div>
+    </header>
+    <a
+      href="https://servicio.mapa.gob.es/regfiweb"
+      target="_blank"
+      style="text-decoration: none"
+    >
+      <h1 class="titulo-h1">Actualizar JSON de productos</h1>
+    </a>
+    <section>
+      <img src="../Fotos/json.png" alt="" class="img-JSON" />
+    </section>
+    <section id="cajas">
+      <form>
+        <div class="form-group">
+          <label for="archivo"
+            >Introduzca el archivo JSON para actualizar los productos</label
+          >
+          <input type="file" name="archivo" id="archivo" />
+        </div>
+        <div class="boton">
+          <div class="form-group">
+            <button type="submit">Actualizar JSON</button>
+          </div>
+        </div>
+      </form>
+      <form id="form-actualizacion-auto">
+        <div class="form-group">
+          <label for="archivo"
+            >Actualizar el JSON de productos de manera automática</label
+          >
+        </div>
+        <div class="boton">
+          <div class="form-group">
+            <button type="submit"  id="automatica">Actualización automática</button>
+          </div>
+        </div>
+      </form>
+    </section>
+    <section class="fondo-footer">
+      <div class="logo-container">
+        <a href="https://salesianosdosa.com/" target="_blank">
+          <img src="../Fotos/Salesianos_Dosa.png" alt="" id="logo-sigpac" />
+        </a>
+      </div>
+
+      <div class="logo-container">
+        <a href="https://sigpac.mapa.es/fega/visor/" target="_blank">
+          <img src="../Fotos/sigpac.png" alt="" id="logo-dosa" />
+        </a>
+      </div>
+
+      <div class="logo-container">
+        <a href="https://www.mapa.gob.es/es/" target="_blank">
+          <img src="../Fotos/Logo_ministerio.png" alt="" />
+        </a>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <p>Cuaderno de campo</p>
+      </div>
+    </footer>
+    <script src="/js/cerrar_sesion.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/actualizarJsonAuto.js"></script>
+  </body>
+</html>

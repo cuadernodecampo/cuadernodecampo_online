@@ -1,0 +1,193 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+h1{ font-size: 56px;}
+h2{ font-size: 43px;}
+h3{ font-size: 32px;}
+p{ font-size: 20px;}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+button{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 10px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    
+}
+button:hover{
+    background-color:rgb(143, 143, 143);
+}
+
+h1{
+    color: white;
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+header{
+    background-color: #5C8001;
+    
+}
+header .logo{
+    margin: 0;
+    padding: 25px 15px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+header .img-logo{
+    background-image: url("../Fotos/Logo.png");
+    background-size:cover;
+    background-position: center center;
+    height: 55px;
+    width: 55px;
+}
+
+.containerlogo{
+    display: flex;
+    align-items: center;
+
+}
+header .container{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+header nav{
+
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-bottom: 25px;
+
+}
+header a{
+    padding: 12px;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease;
+    font-size: 18px;
+
+}
+header a:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+#BotonLogin{
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #FBB02D;
+}
+#portada{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 90vh;
+    text-align: center;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../Fotos//Fondo_pantalla_inicial.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+
+}
+
+#CUE .container{
+    text-align: center;
+    padding: 50px 12px;
+}
+#CUE h2{
+    margin-bottom: 50px;
+
+}
+.color{
+    color: #5C8001;
+}
+
+footer .container{
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#CUE{
+    margin: 20px 0;
+}
+
+@media (min-width: 720px){
+
+    #BotónLogin{
+        margin-left: 10px;
+    }
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+    #CUE  .container{
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+    #CUE  .texto{
+        width: 50%;
+        max-width: 500px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #CUE  p{
+
+        text-align: justify;
+        
+    }
+    #CUE  h2{
+
+        font-size: 40px;
+        margin-top:0px;
+    }
+
+    #CUE .img-container{
+        background-image: url("../Fotos//Ordenador.png");
+        background-size:cover;
+        background-position: center center;
+        height: 340px;
+        width: 500px; 
+   
+    }
+}
+    

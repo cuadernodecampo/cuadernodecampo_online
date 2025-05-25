@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baja de asesores</title>
+    <link rel="stylesheet" href="../CSS/global.css">
+    <link rel="stylesheet" href="../CSS/baja_agricultores_asesores.css">
+
+</head>
+<body>
+    <div class="contenedor-principal">
+    <header>
+        <div class="container">
+            <div class="containerlogo">
+              <a href="index.html">
+                <div class="img-logo"></div>
+               </a>
+            <p class="logo">Baja de equipos de tratamiento</p>
+            
+        </div>
+        <nav>
+          <a href="gestion_equipamientos.html">
+            <img src="../Fotos/flecha.png" alt="" id="flecha">
+        </a>
+            <button id="VolverInicio" onclick="location.href='inicio_administrador.html'">Menu administrador</button>
+            <button id="BotonCerrarSesion" class="propiedades">Cerrar sesión</button>
+        </nav>
+        </div>
+    </header>
+    <h1 class="titulo-h1">Baja de equipamientos</h1>
+    <div id="formularios">
+        <div id="formularios-busqueda">
+            <form id="formulario-DNI">
+              <h1>Seleccionar equipo</h1>
+              <img src="../Fotos/pulverizador.png" alt="" style="height: 150px; margin-bottom: 30px;">
+              <div class="form-group">
+                  <label for="busqueda-equipo">Búsqueda del equipamiento</label>
+                <input
+                  type="text"
+                  name="busqueda-equipo"
+                  id="busqueda-equipo"
+                  placeholder="Búsqueda del equipo"
+                  autocomplete="off"
+                />
+                <label for="seleccion-equipo" class="margen-arriba">Selección del equipamiento</label>
+                <select name="seleccion-equipo" id="seleccion-equipo">
+                  <option value="primera_opcion" selected disabled>
+                    Seleccione el equipo
+                  </option>
+                </select>
+              </div>
+            </form>
+          </div>
+       
+    <div class="form-container">
+        <div class="cabecera">
+            <h1>Datos del equipo</h1>
+        </div>     
+        <form>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="numero_roma">Número de ROMA del equipo</label>
+              <input
+                type="text"
+                name="numero_roma"
+                id="numero_roma"
+                autocomplete="off" readonly
+              />
+          </div>
+            <div class="form-group">
+                <label for="nombre-equipo-tratamiento">Nombre del equipo</label>
+                <input
+                  type="text"
+                  name="nombre-equipo-tratamiento"
+                  id="nombre-equipo-tratamiento"
+                  autocomplete="off" readonly
+                />
+              </div>
+            <div class="form-group">
+                <label for="fecha_adquisicion">Fecha de adquisición</label>
+                <input type="date" id="fecha_adquisicion" readonly/>
+            </div>
+            <div class="form-group">
+                <label for="fecha_ultima_inspeccion">Fecha de última inspección</label>
+                <input type="date" id="fecha_ultima_inspeccion" readonly/>
+            </div>
+        </div>
+        <button  type="submit" class="dar_baja" id="baja-equipamiento"> Dar de baja equipamiento</button>
+    </div>
+</div>
+<section class="fondo-footer">
+    <div class="logo-container">
+      <a href="https://salesianosdosa.com/" target="_blank">
+        <img src="../Fotos/Salesianos_Dosa.png" alt="" id="logo-sigpac">
+      </a>
+    </div>
+    
+    <div class="logo-container">
+      <a href="https://sigpac.mapa.es/fega/visor/" target="_blank">
+        <img src="../Fotos/sigpac.png" alt="" id="logo-dosa">
+      </a>
+    </div>
+    
+    <div class="logo-container">
+      <a href="https://www.mapa.gob.es/es/" target="_blank">
+        <img src="../Fotos/Logo_ministerio.png" alt="">
+      </a>
+    </div>
+</section>
+    <footer>
+        <div class="container">
+            <p>Cuaderno de campo</p>
+        </div>
+    </footer>
+</div>
+<script src="/js/cerrar_sesion.js"></script>
+<script src="../js/baja_equipamientos.js"></script>
+</body>
+</html>
